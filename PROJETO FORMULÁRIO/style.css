@@ -1,0 +1,244 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: arial;
+}
+
+.container {
+    display: flex;
+}
+
+#banner {
+    width: 800px;
+    padding-left: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    background-image: url(img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.banner_title {
+    width: 100px;
+    font-size: 100px;
+    color: white;
+}
+
+.banner_desc {
+    margin-top: 15px;
+    width: 600px;
+    font-size: 15px;
+    color: white;
+    text-wrap: wrap;
+}
+
+.banner_login {
+    display: flex;
+    flex-wrap: wrap;
+    width: 320px;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.banner_login_text {
+    color: white;
+    width: 500px;
+    margin-bottom: 20px;
+}
+
+.facebook {
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 40px;
+    background-color: #3C5A9A;
+}
+.facebook img {
+    height: 25px;
+}
+.x {
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    font-size: 15px ;
+    height: 40px;
+    color: white;
+    background-color: #000000;
+}
+.x img {
+    height: 25px;
+}
+
+.banner_login a {
+    text-decoration-color: white;
+}
+
+#login {
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.login_title {
+    margin-top: 130px;
+    margin-bottom: 80px;
+    font-size: 80px;
+    color: #313131;
+    font-weight: bold;
+}
+
+.login_create {
+    color: #a5a5a5;
+}
+.login_create a {
+    text-decoration: none;
+    color: #000000;
+}
+.login_create a:hover {
+    color: #008cff;
+}
+
+.login_form {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.login_form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login_form input {
+    font-size: 15px;
+    margin: 15px;
+    margin-left: 0;
+    padding: 10px;
+    border: 0;
+    outline: none;
+    border-bottom: 2px solid #a5a5a5;
+}
+
+.login_form input:focus{
+    border-color: #008cff;
+}
+
+.login_form input:focus::placeholder {
+    color: #000000;
+}
+
+.login_remember {
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.remember {
+    display: flex;
+    align-items: center;
+}
+
+.remember input, .remember label {
+    cursor: pointer;
+} 
+
+.remember label {
+    color: #313131;
+}
+
+.remember input[type="checkbox"] {
+    margin: 0;
+    padding: 0;
+    accent-color: #008cff;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    
+}
+.remember input[type="checkbox"]:checked + label {
+    color: #008cff;
+}
+
+.forget a {
+    text-decoration: none;
+    color: #a5a5a5;
+}
+.forget a:hover {
+    text-decoration: none;
+    color: #008cff;
+}
+
+.button_area {
+    height: 100px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.button_area button {
+    width: 100px;
+    cursor: pointer;
+    height: 40px;
+    border-radius: 20px;
+    background: linear-gradient(110deg ,#008cff, #60b8ff);
+    color: white;
+    border: none
+}
+
+@media (max-width:425px) {
+
+    .banner_login {
+        flex-wrap: wrap;    
+        width: 100%;
+    }
+
+    .banner_title {
+        font-size: 80px;
+    }
+
+    .login_title {
+        font-size: 60px;
+    }
+    .login_create {
+        font-size: 12px;
+    }
+
+    .facebook {
+        width: 100px;
+    }
+    .x {
+        width: 150px;
+    }
+
+}
+@media (max-width:640px) {
+
+    .banner_desc {
+        font-size: 12px;
+        width: 80%;
+    }
+
+}
+@media (max-width:1024px) {
+
+    .container {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    #banner {
+        width: 100%;
+    }
+
+}
