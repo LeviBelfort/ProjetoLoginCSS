@@ -18,7 +18,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 100vh;
+    height: 715px;
     background-image: url(img/background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -195,6 +195,10 @@ body {
     background: linear-gradient(110deg ,#008cff, #60b8ff);
     color: white;
     border: none
+}
+
+.cem {
+    width: 100%;
 }
 
 @media (max-width:425px) {
